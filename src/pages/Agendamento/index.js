@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import api from '../../services/api';
+import api from '../../services/ApiSwagger/api';
 import { Link, useHistory } from 'react-router-dom';
 import './styles.css';
 import { RiRecycleFill } from 'react-icons/ri';
@@ -75,7 +75,7 @@ export default function Agendamentos() {
         <div className="nav">
           <Link>Home</Link>
           <Link>Agendamentos</Link>
-          <Link>Bairros</Link>
+          <Link to="/acao">Ações</Link>
           <Link>Configurações</Link>
         </div>
 
@@ -102,12 +102,7 @@ export default function Agendamentos() {
             </select>
             <p>Horario de coleta</p>
             <input type="time" onChange={e => setHorario(e.target.value)} />
-            {/* <input type="radio" name="turn" id="matutino" />
-            <label htmlFor="matutino">Matutino</label>
-            <input type="radio" name="turn" id="vespertino" />
-            <label htmlFor="matutino">Vespertino</label>
-            <input type="radio" name="turn" id="integral" />
-            <label htmlFor="matutino">Integral</label> */}
+
           </div>
 
           <div className="field-rigth">
@@ -120,12 +115,9 @@ export default function Agendamentos() {
             </select>
 
             <p>Tipo de coleta</p>
-            {/* <input type="radio" name="coleta" value="COLETACOMUM" />
-            <label htmlFor="coleta">Coleta comum</label>
-            <input type="radio" name="coleta" value="COLETASELETIVA"/>
-            <label htmlFor="coleta">Coleta seletiva</label> */}
+
             <select name="coleta" onChange={e => setTipoColeta(e.target.value)}>
-              <option value="COLETACOMUM">Tipo de coleta</option>
+              <option value="">Tipo de coleta</option>
               <option value="COLETACOMUM">Coleta comum</option>
               <option value="COLETASELETIVA">Coleta seletiva</option>
             </select>

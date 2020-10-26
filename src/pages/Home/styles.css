@@ -1,0 +1,32 @@
+.home-container{
+  width: 100%;
+  max-width: 1120px;
+  height: 100vh;
+  margin: 0 auto;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.home-container .content{
+  width: 100%;
+  background: #f0f0f0f5;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  margin-top: 2px;
+}
+
+.home-container .content header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.home-container .content header nav a{
+  margin-right: 10px;
+}
+
+.home-container .content section{
+
+}

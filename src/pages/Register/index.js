@@ -30,6 +30,7 @@ export default function Register() {
           <input type="email" placeholder="E-mail" />
           <input type="password" placeholder="Senha" />
           <input placeholder="Departamento" />
+          {/* <option value="">Gerências Municipais</option> */}
           <input placeholder="Cargo exercido" />
           <button type="submit" className="button">Cadastrar</button>
         </form>
