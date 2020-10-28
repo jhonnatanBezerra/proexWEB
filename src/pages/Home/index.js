@@ -11,19 +11,21 @@ export default function Home() {
     <div className="home-container">
       <div className="content">
         <header>
-          <div className="logoss">
-            <strong>RECICLA</strong>
-            <strong> NAVIR<RiRecycleFill size={16} color="#008000" />Í</strong>
+          <div className="logo">
+            <Link to="/home">
+              <strong>RECICLA</strong>
+              <strong> NAVIR<RiRecycleFill />Í</strong>
+            </Link>
           </div>
-          <nav>
+          <nav className="nav-bar">
             <Link>Agendamentos</Link>
-            <Link>Agendamentos</Link>
-            <Link>Agendamentos</Link>
-            <Link>Agendamentos</Link>
-            <Link>Agendamentos</Link>
+            <Link>Ações</Link>
+            <Link>Denuncias</Link>
+            <Link>Educação Ambiental</Link>
+            <Link>Gestores</Link>
           </nav>
           <div className="user-status">
-            <strong>Nome usuario</strong>
+            <strong>NomeUsuario</strong>
             <strong>Sair</strong>
           </div>
         </header>
@@ -35,7 +37,7 @@ export default function Home() {
         </section>
 
         <section>
-
+          <h1>Agendamentos</h1>
         </section>
 
       </div>

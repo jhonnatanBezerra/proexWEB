@@ -85,7 +85,7 @@ form input{
 .button:hover{
   filter: brightness(90%);
 }
-
+ /* estilos globais OK */
 .back-link{
   display: flex;
   align-items: center;
@@ -105,4 +105,47 @@ form input{
   margin-right: 8px;
 }
 
+.logo{
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.logo strong{
+  font-size: 25px;
+  color: #008000;
+}
+
+.logo  strong + strong{
+  display: flex;
+  font-size: 30px;
+  margin-top: -10px;
+  margin-left: 10px;
+  align-items: center;
+  color: #3c6232;
+}
+
+.logo strong svg{
+  width: 30px;
+  height: 30px;
+  color: #008000;
+}
+.logo a{
+  text-decoration: none;
+}
+
+
+.nav-bar a{
+
+  margin-right: 25px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #008000;
+  transition: opacity 0.2s;
+}
+
+.nav-bar a:hover{
+  opacity: 0.8;
+}
 

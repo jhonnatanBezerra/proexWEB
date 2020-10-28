@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
-import apiLocal from '../../services/ApiLocal/api';
+import api from '../../services/ApiLocal/api';
+
 
 import './styles.css';
 import Fundo from '../../assets/pessoas.png';
 
 import { RiRecycleFill } from 'react-icons/ri';
 import { FiLogIn } from 'react-icons/fi';
-import api from '../../services/ApiLocal/api';
 
 export default function Login() {
 
@@ -25,6 +25,7 @@ export default function Login() {
 
     try {
       const response = await api.post('gestores/autenticar', data);
+      localStorage.setItem('usuario',response.data.nome);
       history.push('/agendamento');
     } catch (err) {
       alert('Email ou senha invalido, tente novamente');

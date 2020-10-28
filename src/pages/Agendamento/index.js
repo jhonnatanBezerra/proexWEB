@@ -6,15 +6,15 @@ import { RiRecycleFill } from 'react-icons/ri';
 import { FiLogOut, FiTrash2 } from 'react-icons/fi';
 
 export default function Agendamentos() {
-
+  const usuario = localStorage.getItem('usuario');
   const [agendamentos, setAgendamentos] = useState([]);
   const [bairros, setBairros] = useState([]);
 
 
-  const [diaSemana, setDia] = useState('');
-  const [bairroID, setBairroID] = useState('');
-  const [horario, setHorario] = useState('');
-  const [tipoColeta, setTipoColeta] = useState('');
+  const [diaSemana, setDia] = useState([]);
+  const [bairroID, setBairroID] = useState([]);
+  const [horario, setHorario] = useState([]);
+  const [tipoColeta, setTipoColeta] = useState([]);
 
   const history = useHistory();
 
@@ -62,12 +62,17 @@ export default function Agendamentos() {
     }
   }
 
+  async function handleLogOut() {
+    localStorage.clear();
+    history.push('/');
+  }
+
 
   return (
     <div className="agendamento-container">
       <header>
 
-        <div className="logo">
+        <div className="logos">
           <strong>RECICLA</strong>
           <strong> NAVIR<RiRecycleFill size={16} color="#008000" />Í</strong>
         </div>
@@ -80,8 +85,8 @@ export default function Agendamentos() {
         </div>
 
         <div className="user">
-          <Link>Astoufo</Link>
-          <button><FiLogOut /></button>
+          <Link>{usuario}</Link>
+          <button onClick={handleLogOut}><FiLogOut /></button>
         </div>
       </header>
 

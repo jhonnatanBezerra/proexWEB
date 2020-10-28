@@ -5,6 +5,7 @@ import Agendamento from './pages/Agendamento';
 import Register from './pages/Register';
 import Acao from './pages/Acao';
 import Home from './pages/Home';
+import Principal from './pages/Principal';
 
 
 export default function Routes() {
@@ -16,6 +17,8 @@ export default function Routes() {
         <Route path="/register" component={Register} />
         <Route path="/acao" component={Acao} />
         <Route path="/home" component={Home} />
+        <Route path="/principal" component={Principal} />
+
       </Switch>
     </BrowserRouter>
   )
