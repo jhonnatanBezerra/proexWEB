@@ -9,81 +9,13 @@
 
 .home-container .content{
   width: 100%;
-  height: 100vh;
   background: #f0f0f0f5;
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
   border-radius: 8px;
   margin-top: 5px;
 }
 
-.home-container .content header{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  border-radius: 8px;
-}
-
-.home-container .content .user-status{
-  display: flex;
-  justify-content: space-between;
-}
-
-.home-container .content .user-status strong{
-  color: #008000;
-  font-size: 20px;
-  margin-right: 15px; 
-}
-
-.atalhos{
-  background: #f0f0f0f5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 90%;
-
-}
-
-.atalhos ul{  
-  
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1px;
-  list-style: none;
-}
-
-.atalhos ul li a{
-  font-weight: bold;
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.atalhos ul li a strong{
-  margin: 5px;
-}
-
-.atalhos ul li{
-  border: 1px solid black;
-  border-radius: 8px;
-  /* background: #00ced1; */
-  margin: 15px 10px;
-}
 
 
-.atalhos ul li a strong{
-  color:#120a8f;
-}
 
-
-.atalhos ul li a svg{  
-  color:#120a8f;
-  background: transparent;
-  width: 110px;
-  height: 100px;
-}
-
-/* cores dos atalhos */
 

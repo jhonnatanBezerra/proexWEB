@@ -14,18 +14,19 @@
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
   border-radius: 8px;
   margin-top: 5px;
+  padding: 5px;
 }
-
+/* 
 .home-container .content header{
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(00, 80, 00, 0.3);
   border-radius: 8px;
-}
+} */
 
-.home-container .content .user-status{
+/* .home-container .content .user-status{
   display: flex;
   justify-content: space-between;
 }
@@ -34,9 +35,69 @@
   color: #008000;
   font-size: 20px;
   margin-right: 15px; 
+} */
+
+.home-container .content .agendamentos {
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
 }
 
-/* .home-container .content section{
-  border: 1px solid black;
+ .header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.home-container .content .register{
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background: #f0f0f0f5;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
+}
+
+.home-container .content .register form{
+  display: flex;
+  flex-direction: column;
+}
+
+.home-container .content .register .inputs{
+  display: grid;
+  grid-template-columns: repeat(2,1fr) ;
+  grid-gap: 10px;
+}
+
+.home-container .content .register .inputs select{
+    width: 200px;
+    border-radius: 8px;
+    font-size: 15px;
+    height: 25px;
+    background: transparent;
+    border-color: black;
+}
+
+
+
+.home-container .content .register .inputs input[type="time"]{
   border-radius: 8px;
-} */
+  border: 1px solid;
+  height: 25px;
+  background: #f0f0f0f5;
+}
+
+.home-container .content .register .buttons{
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.home-container .content .register .buttons button{
+  width: 200px;
+}
+
+.home-container .content .register .buttons button:first-child{
+  margin-right: 10px;
+}

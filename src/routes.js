@@ -6,6 +6,8 @@ import Register from './pages/Register';
 import Acao from './pages/Acao';
 import Home from './pages/Home';
 import Principal from './pages/Principal';
+import Test from './pages/Test';
+
 
 
 export default function Routes() {
@@ -18,6 +20,7 @@ export default function Routes() {
         <Route path="/acao" component={Acao} />
         <Route path="/home" component={Home} />
         <Route path="/principal" component={Principal} />
+        <Route path="/teste" component={Test} />
 
       </Switch>
     </BrowserRouter>

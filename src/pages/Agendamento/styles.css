@@ -5,9 +5,10 @@
   margin: 0 auto;
   background:  #f0f0f7;
   padding-bottom: 5px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
 }
 
-.agendamento-container header{
+/* .agendamento-container header{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -69,7 +70,7 @@
 .agendamento-container .user button svg{
   margin-right: 15px;
   height: 24px;
-}
+} */
 
 section{
   width: 80%;

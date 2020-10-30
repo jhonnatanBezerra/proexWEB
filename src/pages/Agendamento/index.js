@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import api from '../../services/ApiSwagger/api';
+import Header from '../../Comp/Header';
 import { Link, useHistory } from 'react-router-dom';
 import './styles.css';
 import { RiRecycleFill } from 'react-icons/ri';
@@ -32,6 +33,7 @@ export default function Agendamentos() {
 
   async function handleRegister(e) {
     e.preventDefault();
+   
     const data = {
       bairro: {
         "id": bairroID
@@ -70,7 +72,10 @@ export default function Agendamentos() {
 
   return (
     <div className="agendamento-container">
-      <header>
+
+      <Header user={usuario} fn={handleLogOut}/>
+
+      {/* <header>
 
         <div className="logos">
           <strong>RECICLA</strong>
@@ -88,7 +93,9 @@ export default function Agendamentos() {
           <Link>{usuario}</Link>
           <button onClick={handleLogOut}><FiLogOut /></button>
         </div>
-      </header>
+      </header> */}
+
+
 
       <section>
         <h1>Novo agendamento</h1>
